@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.navbar {
+    max-width: 100vw;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-family: 'Rubik';
+    font-weight: bold;
+    color: #333333;
+    font-size: 15px;
+}
+
+.navbar-nav .nav-item {
+    align-self: center;
+}
+
+.navbar-nav>.active>a {
+    border-bottom: 3px #22B04C solid;
+}
+.navbar-nav .btn-primary {
+    font-family: 'Rubik';
+    background-color: #22B04C;
+    border: 0px;
+    border-radius: 100px;
+    font-size: 15px;
+    align-self: center;
+}
+
+.heromuba {
+    background-color: #F3F5FC;
+    padding:170px 0px 100px 0px;
+}
+
+.heromuba .font-header1 {
+    font-family: 'Rubik';
+    font-weight: bold;
+    color:#22B04C;
+}
+.heromuba .font-header2 {
+    font-family: 'Rubik';
+    font-weight: bold;
+    max-width: 90%;
+}
+.heromuba p {
+    font-family: 'Rubik';
+    font-weight: normal;
+}
+.heromuba .text-input-search {
+    border-radius: 100px 0px 0px 100px;
+    width: 75%;
+    padding: 13.5px 20px 13.5px 30px;
+    border:0px;
+    font-size: 13px;
+}
+
+.heromuba .btn-primary {
+    background-color: #22B04C;
+    border:0px;
+    padding: 13px 0px 13px 0px;
+    width: 20%;
+    margin-left: -10px;
+    border-radius: 0px 100px 100px 0px;
+    font-size: 13px;
+}
+
+.heromuba .mobile-text-align-center {
+    text-align: inherit;
+}
+
+.kategorimuba {
+    margin-bottom: 100px;
+}
+
+.kategorimuba .header-info-kategori {
+    margin-top: 80px;
+}
+
+.kategorimuba .header-info-kategori h2 {
+    font-family: 'Rubik';
+    font-weight: 400;
+}
+.kategorimuba .header-info-kategori label {
+    color: #22B04C;
+    font-family: 'Rubik';
+    font-weight: 500;
+}
+
+.kategorimuba .header-info-kategori div {
+    margin: auto;
+    width: 56px;
+    border-bottom:5px #22B04C solid;
+}
+
+.kategorimuba .kategori-card {
+    padding: 30px;
+    background-color: #F3F5FC;
+    border-radius: 15px;
+    cursor: pointer;
+
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.kategorimuba .kategori-card::after {
+    content: "";
+    border-radius: 15px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.kategorimuba .kategori-card:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+.kategorimuba .kategori-card:hover::after {
+    opacity: 1;
+}
+.kategorimuba .kategori-card h5 {
+    margin-top: 30px;
+    font-family: 'Rubik';
+    font-weight: 700;
+}
+.kategorimuba .kategori-card p {
+    margin-top: 15px;
+    font-family: 'Rubik';
+    font-weight: 300;
+    font-size: 15px;
+}
+.link-button {
+    font-family: 'Rubik';
+    font-weight: 500;
+    color: #22B04C;
+    font-size: 15px;
+    vertical-align: middle;
+}
+.link-button:hover {
+    color: #22B04C;
+}
+
+.icon {
+    vertical-align: middle;
+}
+
+
+.beritamuba {
+    background-image: url("../images/berita-bg.png");
+    padding: 100px 0px 100px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 100px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.beritamuba span {
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+.beritamuba .deskripsi-berita h3 {
+    margin-top: 10px;
+    font-family: 'Rubik';
+    font-weight: 500;
+    color: #fff;
+    line-height: 42px;
+}
+
+.beritamuba .deskripsi-berita div {
+    width: 48px;
+    border-bottom: 3px #fff solid;
+}
+
+.beritamuba .deskripsi-berita p {
+    margin-top: 10px;
+    font-family: 'Rubik';
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 24px;
+}
+
+.beritamuba .deskripsi-berita .button-berita {
+    background-color: transparent;
+    border:1px #fff solid;
+    border-radius: 100px;
+    color: #fff;
+}
+.beritamuba .deskripsi-berita .button-berita:hover {
+    background-color: #22B04C;
+    border:1px #22B04C solid;
+    border-radius: 100px;
+    color: #fff;
+    transition: 1s;
+}
+
+.datasetmuba {
+    margin-bottom: 100px;
+}
+
+.datasetmuba .header-info-dataset h2 {
+    font-family: 'Rubik';
+    font-weight: 400;
+}
+.datasetmuba .header-info-dataset div {
+    margin: auto;
+    width: 56px;
+    border-bottom: 5px #22B04C solid;
+}
+
+.datasetmuba .card-dataset {
+    padding: 25px;
+    background-color: #F3F5FC;
+    border-radius: 10px;
+}
+
+.datasetmuba .card-dataset span {
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 15px;
+    color: #828282;
+}
+
+.datasetmuba .card-dataset p {
+    margin-top: 10px;
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 18px;
+    color: #333333;
+}
+
+.hubungimuba {
+    background-color: #22B04C;
+    padding: 50px 0px 50px 0px;
+    /* margin-bottom: 100px; */
+}
+.hubungimuba h2 {
+    font-family: 'Rubik';
+    font-weight: 700;
+    color: #fff;
+}
+.hubungimuba p {
+    margin-top: 10px;
+    font-family: 'Rubik';
+    font-weight: 300;
+    color: #fff;
+    font-size: 18px;
+}
+
+.hubungimuba span {
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.hubungimuba .btn-primary {
+    background-color: #22B04C;
+    border: 0;
+    padding: 20px 30px 20px 30px;
+}
+
+.hubungimuba .kontak {
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.hubungimuba .card-button {
+    text-align: right;
+}
+
+.footermuba {
+    padding: 50px 0px 50px 0px;
+    background-color: #253044;
+}
+
+.footermuba h4 {
+    font-family: 'Rubik';
+    font-weight: 600;
+    color: #fff;
+}
+
+.footermuba p {
+    font-family: 'Rubik';
+    font-weight: 300;
+    color: #fff;
+    font-size: 15px;
+}
+
+.copyrightmuba {
+    padding:20px 0px 20px 0px;
+    background-color: #1B263A;
+}
+.copyrightmuba span {
+    font-family: 'Rubik';
+    font-weight: 400;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+   .navbar-nav .btn-primary {
+        margin-top: 10px;
+        margin-left: 0 !important;
+        align-self: inherit;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-family: 'Rubik';
+        font-weight: 500;
+        color: #333333;
+        font-size: 16px;
+    }
+
+    .navbar-nav .nav-item {
+        border-bottom: 1px #000 dotted;
+        width: 100%;
+    }
+    .navbar-nav>.active>a {
+        border-bottom: inherit;
+    }
+
+    .heromuba .mobile-text-align-center {
+        text-align: center;
+    }
+
+    .heromuba .hero-icon {
+        margin-top: 30px;
+    }
+
+    .heromuba .font-header2 {
+        max-width: 100%;
+    }
+    .heromuba .text-input-search {
+        width: 70%;
+    }
+    .heromuba .btn-primary {
+        width: 25%;
+    }
+
+    .kategorimuba {
+        margin-bottom: 50px;
+    }
+    .kategorimuba .header-info-kategori {
+        margin-top: 52px;
+        text-align: center;
+    }
+    .kategorimuba .kategori-card {
+        margin: 0px 0px 30px 0px;
+    }
+    .kategorimuba .kategori-card:hover {
+        -webkit-transform: scale(1.03, 1.03);
+        transform: scale(1.03, 1.03);
+    }
+    .beritamuba .deskripsi-berita {
+        margin-top: 20px;
+    }
+    .datasetmuba {
+        margin-bottom: 50px;
+    }
+    .card-dataset {
+        margin-bottom: 20px;
+    }
+    .hubungimuba .kontak {
+        text-align: center;
+    }
+    .hubungimuba .btn-primary {
+        margin-top: 20px;
+        padding: 10px 20px 10px 20px;
+    }
+    .hubungimuba .card-button {
+        text-align: center;
+    }
+
+
+    /* .kategorimuba .header-info-kategori h1 {
+        font-size: 18px;
+    } */
+
+
+}
